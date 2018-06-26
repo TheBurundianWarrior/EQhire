@@ -1,4 +1,8 @@
+#include <cstdint>
+#include <iostream>
+#include <string>
 #include "Work.h"
+using namespace std;
 
 Work::Work()
 {
@@ -6,8 +10,8 @@ Work::Work()
     //ctor
     newCompanyName= "Name";
     newRole= "Name";
-    newLocation="Name;
-    newDescription="Name ;
+    newLocation="Name";
+    newDescription="Name" ;
     newStartDate=0;
     newEndDate=0;
 }
@@ -16,21 +20,21 @@ Work::~Work()
 {
     //dtor
 }
-Work::CompanyName(){
+string Work::getCompanyName(){
 return newCompanyName;
 }
-Work::Role()    {
+string Work::getRole()    {
 return newRole;
 }
-Work::Location(){
+string Work::getLocation(){
 return newLocation;
 }
-Work::Description(){
-return newDescrition;
+string Work::getDescription(){
+return newDescription;
 }
-Work::StartDate(){
+int Work::getStartDate(){
 return newStartDate;
 }
-Work::EndDate(){
-return newEndDate
+int Work::getEndDate(){
+return newEndDate;
 }

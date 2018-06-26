@@ -1,20 +1,16 @@
 #include<iostream>
 #include<string>
 #include"Work.h"
-
 using namespace std;
 
-
-
-
-
-    int main (){
-        string CompanyName;
-        string Role;
-        string Location;
-        string Description;
-        int StartDate;
-        int Enddate;
+int main (){
+    string CompanyName;
+    string Role;
+    string Location;
+    string Description;
+    int StartDate;
+    int Enddate;
+    Work box;
 
     cout<<"Enter the Company Name"<<CompanyName;
     cout<<"Enter the location of the Company"<<Location;
@@ -23,7 +19,7 @@ using namespace std;
     cout<<"When did you start(year)"<<StartDate;
     cout<<"When did you finish(year)"<<Enddate;
 
-Work.jobseeker_1(CompanyName,Role,Location,Description,StartDate,Enddate);
+    box.jobseeker_1(CompanyName,Role,Location,Description,StartDate,Enddate);
 
 
     cout<<"Enter the Company Name"<<Jobseeker_1.get CompanyName;
